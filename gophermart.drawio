@@ -1,49 +1,74 @@
-<mxfile host="app.diagrams.net" modified="2023-08-10T11:59:03.666Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" version="21.6.7" etag="mYmZD1HuU43KpehiDxWr" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-10T14:52:35.072Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="SP3nwfsweOZ4QYUZC2CG" version="21.6.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1223" dy="898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-6" edge="1">
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="EKF_cx_3UrfIiQcMhAZe-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Lamp doesn&#39;t work" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="80" width="120" height="40" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Регистрация&lt;br&gt;&amp;nbsp;пользователей" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="29" y="105" width="150" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-10" edge="1">
-          <mxGeometry y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-0" value="1. Каждый логин должен быть уникальным.&lt;br&gt;2. После успешной регистрации идет аутентификация.&lt;br&gt;&amp;nbsp;3. Хранить логин/пароль будем в БД." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="105" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-7" edge="1">
-          <mxGeometry y="10" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-2" value="Аутентификация" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="29" y="210" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="Lamp&lt;br&gt;plugged in?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="170" y="170" width="100" height="80" as="geometry" />
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-4" value="1.Для передачи аутентификационных данных используем cookies.&lt;br&gt;2.Для каждого пользователя генерируем уникальный ID и передаем через cookies.&amp;nbsp;&lt;br&gt;3. Секретный ключ для генерации/чтения кук храним в БД.&lt;br&gt;4. Нужен мидлварь для проверки аутентификации всех запросов.&lt;br&gt;5. кэш?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="210" width="320" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Plug in lamp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="320" y="190" width="120" height="40" as="geometry" />
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-5" value="Загрузка номера заказа" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="29" y="420" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-8" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="WIyWlLk6GJQsqaUBKTNV-11" edge="1">
-          <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-7" value="1. Регистрация и аутентификация. Проверяем логин в БД(Логин уникальный).&lt;br&gt;2. Генерируем секретный ключ для кук. &lt;br&gt;3. Генерируем userID и передаем в куку.&amp;nbsp;&lt;br&gt;4. Сохраняем в БД Логин/пароль/секретный ключ." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="559" y="105" width="240" height="245" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-9" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="WIyWlLk6GJQsqaUBKTNV-12" edge="1">
-          <mxGeometry y="10" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-8" value="1. Проверка Луна.&lt;br&gt;2. С&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.85); font-family: &amp;quot;YS Text&amp;quot;, Arial, Helvetica, sans-serif; text-align: start;&quot;&gt;истема расчёта начислений баллов&lt;/span&gt;&lt;br&gt;&amp;nbsp;3. Положить в БД номер заказа и логин." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="420" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-10" value="Bulb&lt;br&gt;burned out?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="170" y="290" width="100" height="80" as="geometry" />
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-10" value="&lt;h4 style=&quot;line-height: 1.2em; margin: 1.2em 0px 1em; box-sizing: inherit; color: rgba(0, 0, 0, 0.85); background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: inherit; font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Получение списка загруженных номеров заказов&lt;/font&gt;&lt;/span&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="29" y="500" width="150" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="Repair Lamp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="160" y="430" width="120" height="40" as="geometry" />
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-11" value="1. Как взаимодействовать с системой начисления баллов?&lt;br&gt;2. Запись в БД о начислении баллов, статусе." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="559" y="420" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="Replace Bulb" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="320" y="310" width="120" height="40" as="geometry" />
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-12" value="1. Запрос в БД и получение заказов.&lt;br&gt;2. Сортировка по времени заказа." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="500" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-13" value="1. На каком этапе формируется статус заказа?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="559" y="500" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-14" value="Текущий баланс пользователя" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="29" y="580" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-15" value="1. Запрос в БД и получение по логину общего кол-ва баллов(отдельная таблица)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="580" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-16" value="1. Предусмотреть запись добавление баллов к пользователю." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="559" y="580" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-17" value="Запрос на списание баллов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="29" y="660" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-18" value="1. При поступлении запроса идем в систему начисления баллов.&amp;nbsp;&lt;br&gt;2. Проверяем доступное для списание кол-во.&lt;br&gt;3. Вычитаем из общего кол-ва по пользователю, кол-во в запросе.&lt;br&gt;4. Запись в БД о кол-ве списываемых баллов." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="660" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-19" value="1. Пока нет понимания, как это должно быть с новым заказом.&lt;br&gt;2.&amp;nbsp;для успешного списания достаточно &lt;b&gt;успешной регистрации запроса&lt;/b&gt;, никаких внешних систем начисления не предусмотрено и не требуется реализовывать?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="559" y="660" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-20" value="Получение информации о списании абллов" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="29" y="780" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-21" value="1. Запрос в БД о всех списаниях.&lt;br&gt;2. Сортировка результата по времени." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="780" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="559" y="780" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EKF_cx_3UrfIiQcMhAZe-23" value="Предусмотреть несколько таблиц БД:&lt;br&gt;1. Авторизация (Логин, пароль, секретный ключ для кук)&lt;br&gt;2. Заказы(Логин, номер заказа, кол-во баллов, время записи)&lt;br&gt;3. Кол-во баллов(Логин, кол-во баллов)&lt;br&gt;4. Списания баллов(Логин, кол-во баллов, время)." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="870" width="490" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
