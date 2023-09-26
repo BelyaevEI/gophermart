@@ -73,5 +73,5 @@ func RunServer() error {
 		return err
 	}
 
-	return http.ListenAndServe(app.flagRunAddr, app.route)
+	return http.ListenAndServe("0.0.0.0:8080", app.route)
 }
