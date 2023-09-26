@@ -105,7 +105,7 @@ func (orderservice *OrderService) OrderStatusChecker() {
 			numStr := strconv.Itoa(order.NumOrder)
 
 			answerLoyalty, err := orderservice.orderepository.Upload2Loyalty(numStr)
-			if len(answerLoyalty.Order) != 0 || err != nil {
+			if len(answerLoyalty.Order) != 0 || err == nil {
 				if err = orderservice.orderepository.UpdateOrder(answerLoyalty, order.Token); err == nil {
 					if err = orderservice.orderepository.UpdateUserScores(answerLoyalty.Accrual, order.Token); err != nil {
 						continue
