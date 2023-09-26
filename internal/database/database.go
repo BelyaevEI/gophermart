@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/BelyaevEI/gophermart/internal/models"
+	_ "github.com/jackc/pgx/v5/stdlib"
 )
 
 type Database struct {
@@ -20,6 +21,8 @@ func NewConnect(DBpath string) (*Database, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	// db, err := pgx.Connect(context.Background(), DBpath)
 
 	_, err = db.Exec("CREATE TABLE IF NOT EXISTS registation" +
 		"(login text NOT NULL, password text NOT NULL, secretkey text NOT NULL, token text NOT NULL)")

@@ -9,4 +9,13 @@ require (
 	golang.org/x/crypto v0.13.0
 )
 
-require go.uber.org/multierr v1.10.0 // indirect
+require (
+	github.com/jackc/pgpassfile v1.0.0 // indirect
+	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
+	golang.org/x/text v0.13.0 // indirect
+)
+
+require (
+	github.com/jackc/pgx/v5 v5.4.3
+	go.uber.org/multierr v1.10.0 // indirect
+)
