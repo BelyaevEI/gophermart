@@ -30,7 +30,7 @@ func NewApp() (*App, error) {
 
 	// Parse variable environment
 	cfg := config.ParseFlags()
-
+	log.Log.Info("Flag ^" + cfg.DBpath)
 	// Init DB
 	db, err := database.NewConnect(cfg.DBpath)
 	if err != nil {
