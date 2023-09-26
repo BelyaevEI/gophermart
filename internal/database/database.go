@@ -135,18 +135,17 @@ func (d *Database) UpdateOrder(order models.Order, token string) error {
 func (d *Database) UpdateUserScores(point int, token string) error {
 
 	scores := 0
-	row, err := d.database.Query("SELECT scores FROM scores WHERE token = $1", token)
-	if err != nil {
-		if err := row.Scan(&scores); err != nil {
-			if !errors.Is(err, sql.ErrNoRows) {
-				return err
-			}
+	row := d.database.QueryRow("SELECT scores FROM scores WHERE token = $1", token)
+
+	if err := row.Scan(&scores); err != nil {
+		if !errors.Is(err, sql.ErrNoRows) {
+			return err
 		}
 	}
 
 	scores += point
 
-	_, err = d.database.Exec("UPDATE scores SET scores = $1 WHERE token = $2", scores, token)
+	_, err := d.database.Exec("UPDATE scores SET scores = $1 WHERE token = $2", scores, token)
 	if err != nil {
 		return err
 	}
@@ -217,12 +216,10 @@ func (d *Database) UpdateWithdrawn(ctx context.Context, token string, sum float6
 
 func (d *Database) GetUSerScore(ctx context.Context, token string) (float64, error) {
 	var scores float64
-	row, err := d.database.Query("SELECT scores FROM scores WHERE token = $1", token)
-	if err != nil {
-		if err := row.Scan(&scores); err != nil {
-			if !errors.Is(err, sql.ErrNoRows) {
-				return 0, err
-			}
+	row := d.database.QueryRow("SELECT scores FROM scores WHERE token = $1", token)
+	if err := row.Scan(&scores); err != nil {
+		if !errors.Is(err, sql.ErrNoRows) {
+			return 0, err
 		}
 	}
 	return scores, nil
