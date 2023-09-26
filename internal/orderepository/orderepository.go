@@ -42,7 +42,12 @@ func (orderepository *Order) Upload2Loyalty(numOrder string) (models.Order, erro
 		break
 	}
 
-	defer response.Body.Close()
+	// defer response.Body.Close()
+	defer func() {
+		if response.Body != nil {
+			response.Body.Close()
+		}
+	}()
 
 	if err := json.NewDecoder(response.Body).Decode(&order); err != nil {
 		return models.Order{}, err
