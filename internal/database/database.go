@@ -242,6 +242,7 @@ func (d *Database) GetAllWithdrawn(ctx context.Context, token string) ([]models.
 			return nil, nil
 		}
 		return nil, err
+
 	}
 
 	for rows.Next() {
