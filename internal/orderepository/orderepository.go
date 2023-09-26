@@ -36,13 +36,17 @@ func (orderepository *Order) Upload2Loyalty(numOrder string) (models.Order, erro
 		if err != nil || response.StatusCode == http.StatusTooManyRequests ||
 			response.StatusCode == http.StatusNoContent {
 
+			if response != nil && response.Body != nil {
+				response.Body.Close()
+			}
+
 			time.Sleep(5 * time.Second)
 			continue
 		}
+
 		break
 	}
 
-	// defer response.Body.Close()
 	defer func() {
 		if response.Body != nil {
 			response.Body.Close()
