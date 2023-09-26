@@ -128,4 +128,5 @@ func (u *User) GetAllWithdrawn(ctx context.Context, token string) ([]models.AllW
 	})
 
 	return withdrawns, nil
+
 }
