@@ -28,6 +28,8 @@ func ParseFlags() Parameters {
 		flagRunAddr = envRunAddr
 	}
 
+	println("Flag ^ " + flagRunAddr)
+
 	if envaccrual := os.Getenv("ACCRUAL_SYSTEM_ADDRESS"); envaccrual != "" {
 		accrualPath = envaccrual
 	}

@@ -30,7 +30,7 @@ func (orderepository *Order) Upload2Loyalty(numOrder string) (models.Order, erro
 		order    models.Order
 		response *http.Response
 	)
-
+	// resty - http client
 	for {
 		response, err := http.Get(orderepository.host + orderepository.host + numOrder)
 		if err != nil || response.StatusCode == http.StatusTooManyRequests ||
